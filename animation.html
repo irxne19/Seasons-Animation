@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Seasons</title>
+    <link rel="stylesheet" type="text/css" href="animation.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+</head>
+
+<body>
+
+    <div id="h1">
+        <p>Seasons of the year</p>
+    </div>
+    <div id="position">
+        <div class="season">
+            <div id="d1">
+                <img src="town.png" width=700px; height=500px;>
+            </div>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="d2">
+            <input type="button" class="button" id="bt1" value="Monsoon">
+            <input type="button" class="button" id="bt2" value="Autumn">
+            <input type="button" class="button" id="bt3" value="Winter">
+        </div>
+    </div>
+    <script src="animation.js"></script>
+    <script>
+        $("#bt1").click(function () {
+            $(".season").removeClass("snow");
+            $(".season").removeClass("leaf");
+            $(".season").addClass("rain");
+            $(".season").css("background-color", "#567c87");
+        });
+        $("#bt2").click(function () {
+            $(".season").removeClass("rain");
+            $(".season").removeClass("snow");
+            $(".season").addClass("leaf");
+            $(".season").css("background-color", "#e1eec3");
+        });
+        $("#bt3").click(function () {
+            $(".season").removeClass("rain");
+            $(".season").addClass("snow");
+            $(".season").css("background-color", "#dfedf2");
+        });
+    </script>
+</body>
+
+</html>
